@@ -99,4 +99,6 @@
 //获取当前语言
 #define PACCurrentLanguage ([[NSLocale preferredLanguages] objectAtIndex:0])
 
+#define kStrFormat(str,...) [NSString stringWithFormat:str,##__VA_ARGS__]
+
 #endif /* PACCommonmacro_h */
